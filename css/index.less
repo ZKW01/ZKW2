@@ -1,0 +1,502 @@
+
+
+
+/*轮播图样式*/
+
+#banner {
+    width: 100%;
+    height: 100vh;
+    /*border: solid 1px;*/
+    position: relative;
+    overflow: hidden;
+    color: #FFF;
+}
+
+#banner p {
+
+    /*position: absolute;*/
+    font-size: 45px;
+    border-radius: 25px;
+    top: 360px;
+    color: rgba(0, 0, 0, .4);
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    font-size: 80px;
+}
+
+
+#banner p:hover {
+    color: #fff;
+
+
+
+}
+
+.left {
+    position: absolute;
+    left: 10px;
+}
+
+.right {
+    position: absolute;
+    right: 10px;
+}
+
+#banner ul {
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+}
+
+#banner ul li {
+    cursor: pointer;
+    float: left;
+    width: 30px;
+    height: 10px;
+    border: solid 1px #fff;
+    margin-left: 20px;
+    list-style-type: none;
+    border-radius: 20px;
+
+
+}
+
+#banner ul li:first-child {
+    margin-left: 0;
+}
+
+
+
+
+#banner p {
+    cursor: pointer;
+    /*鼠标指针*/
+}
+
+.li_bk {
+    background-color: rgba(238, 232, 232, 0.7);
+}
+
+#showdiv {
+    width: 400%;
+    height: 800px;
+    position: absolute;
+}
+
+#banner img {
+    width: 25%;
+    height: 1000px;
+    float: left;
+
+}
+
+#top_s1 {
+    position: absolute;
+    font-size: 20px;
+    top: 30px;
+    left: 350px;
+    letter-spacing: 3px;
+}
+
+#top_s1>a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+// 日常记录
+.about-me {
+    margin-top: 100px;
+    height: 600px;
+
+    h2 {
+        margin-bottom: 50px;
+    }
+
+
+    #tab {
+        position: absolute;
+        right: 50%;
+        margin-right: -120px;
+    }
+
+
+    #tab li {
+        float: left;
+        list-style: none;
+        width: 70px;
+        height: 40px;
+        line-height: 40px;
+        cursor: pointer;
+        text-align: center;
+
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+
+
+
+    #container {
+        position: relative;
+        height: 400px;
+
+        top: 50px;
+    }
+
+    #content1,
+    #content2,
+    #content3 {
+        width: 100%;
+        height: 200px;
+        padding: 30px;
+        position: absolute;
+        top: 40px;
+        left: 0;
+    }
+
+    .line-active {
+        border-bottom: 3px solid red;
+
+    }
+
+    // 展示图片样式
+    .imgs {
+        width: 100%;
+        height: 200px;
+
+        li {
+            float: left;
+            width: 21%;
+            height: 200px;
+            overflow: hidden;
+            margin-top: 3%;
+            margin-left: 2%;
+            margin-right: 2%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+            transition: 0.3s;
+
+
+        }
+
+        li:hover{
+            transform: scale(1.1);
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+    }
+
+}
+
+// 技能与计划
+.Skills-and-Goals {
+    background-color: rgb(244, 244, 244);
+    height: 800px;
+
+    h2 {
+        margin-top: 50px;
+    }
+
+
+    // 技能
+    .Skills {
+        float: left;
+        width: 50%;
+        height: 500px;
+        // background-color: #bfa;
+
+        ul {
+
+            margin-top: 20%;
+            margin-left: 30%;
+
+            li {
+                margin-top: 5%;
+            }
+
+            .skill-info {
+                width: 80%;
+                overflow: hidden;
+
+                span {
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+
+                span:first-child {
+                    float: left;
+                }
+
+                span:last-child {
+                    float: right;
+                }
+
+            }
+
+            // 进度条容器
+            .g-container {
+                width: 80%;
+                height: 20px;
+                border-radius: 25px;
+                background: #eee;
+                display: inline-block;
+            }
+
+            // 进度条
+            .g-progress {
+                width: 0%;
+                height: inherit;
+                border-radius: 25px 0 0 25px;
+                background: #0f0;
+                transition: 0.7s;
+            }
+
+
+        }
+
+
+
+    }
+
+
+
+
+    &:hover .g-progress2 {
+        width: 70%;
+    }
+
+    &:hover .g-progress3 {
+        width: 60%;
+    }
+
+    &:hover .g-progress4 {
+        width: 20%;
+    }
+
+    &:hover .g-progress5 {
+        width: 5%;
+    }
+
+
+    // 规划栏
+    .Goals {
+        float: left;
+        width: 50%;
+        height: 500px;
+        // background-color: red;
+
+
+        h3 {
+            margin-left: 15%;
+            font-size: 36px;
+            font-weight: bold;
+            margin-top: 15%;
+            margin-bottom: 2%;
+        }
+
+        p {
+            font-size: 22px;
+            font-weight: bold;
+            margin-left: 15%;
+            margin-top: 3%;
+        }
+    }
+
+}
+
+// 校园生活
+
+.School-Life {
+    margin-top: 200px;
+    height: 1000px;
+
+    h2 {
+        margin-bottom: 30px;
+    }
+
+
+    .left {
+        width: 58%;
+        margin-left: 5%;
+
+
+        ul {
+
+            li {
+                overflow: hidden;
+                margin-top: 2%;
+                margin-left: 4%;
+                padding: 2%;
+                // padding-left: 5%;
+                float: left;
+                width: 42%;
+                box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+                transition: 0.3s;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+
+
+                h4 {
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+            }
+
+
+        }
+
+    }
+
+
+    .right {
+
+        margin-top: 1%;
+        margin-right: 5%;
+        width: 25%;
+        height: 800px;
+
+        box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+
+
+// 个人信息
+        .info {
+            margin: 0 auto;
+            margin-top: 80px;
+            width: 60%;
+            height: 600px;
+
+            .img{
+                overflow: hidden;
+                border-radius: 50%;
+                margin: 0 auto;
+                width: 200px;
+                height: 200px;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+
+            }
+
+            .desc{
+                margin-top: 20px;
+
+                
+            h4{
+                text-align: center;
+                font-size: 26px;
+                font-weight: bold;
+                margin-bottom: 30px;
+            }
+
+            p{
+                margin-top: 30px;
+                width: 100%;
+                margin: 0 auto;
+                font-size: 18px;
+                font-weight: bold;
+
+            }
+
+            }
+
+
+        }
+    }
+
+}
+
+
+
+// 底部
+
+.footer{
+    background-color: skyblue;
+    height: 800px;
+    overflow: hidden;
+    margin-bottom: 0;
+
+    h2{
+        margin-top: 2%;
+        margin-bottom: 50px;
+
+    }
+
+    .left{
+        float: left;
+        width: 40%;
+        height: 500px;
+        margin-left: 10%;
+
+        h4{
+        color: #333;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        form{
+            margin-top: 60px;
+        }
+
+        input{
+            width: 80%;
+            height: 45px;
+            border: none;
+            display: block;
+            margin-top: 40px;
+            font-size: 22px;
+            border-radius: 20px;
+
+        }
+
+        textarea{
+            width: 80%;
+            margin-top: 40px;
+            border: none;
+            font-size: 22px;
+            border-radius: 20px;
+
+        }
+
+        button{
+            display: block;
+            width: 100px;
+            height: 50px;
+            border: none;
+            background-color: #FFF;
+            border-radius: 20px;
+            margin-top: 3%;
+            margin-left: 60%;
+        }
+    }
+
+    .right{
+        float: right;
+        width: 40%;
+        height: 500px;
+        margin-right: 10%;
+
+        img{
+            width: 100%;
+            
+        }
+    }
+
+
+
+
+}
+
+

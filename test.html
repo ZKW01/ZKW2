@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+
+        let arr = [1, 2, 3, 4, 5];
+
+        // 删除指定的数组元素
+        // arr 数组 val 指定的元素
+        function removeArr(arr, val) {
+
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] === val) {
+                    arr.splice(i, 1);
+                }
+            }
+        }
+
+        // removeArr(arr,4)
+        // console.log(arr);
+
+
+        // 反转数组元素排序
+
+        function reverseArbitraryArr(arr) {
+            var temp = 0;
+            for (var i = 0; i < arr.length / 2 - 1; i++) { // 遍历数组内元素
+                temp = arr[i];
+                arr[i] = arr[arr.length - 1 - i];
+                arr[arr.length - 1 - i] = temp; // 交换变量
+            }
+            return arr;
+        }
+        // console.log(reverseArbitraryArr(arr)); 
+
+
+
+        // 冒泡排序
+        function sortArr(arr) {
+            // 遍历数组，次数就是arr.length - 1
+            for (var i = 0; i < arr.length - 1; i++) {
+                // 如果前一个数 大于 后一个数 就交换两数位置
+                if (arr[i] > arr[i + 1]) {
+                    var temp = arr[i];
+                    arr[i] = arr[i + 1];
+                    arr[i + 1] = temp;
+                }
+            }
+
+        }
+
+        // sortArr(arr);
+        // console.log(arr)  
+
+
+        // 插入排序
+        function insertSort(arr) {
+            for (let i = 1; i < arr.length; i++) {
+                for (var j = i; j > 0; j--) {
+                    if (arr[j - 1] > arr[j]) {
+                        var temp = arr[j - 1]
+                        arr[j - 1] = arr[j]
+                        arr[j] = temp
+                    }
+
+                }
+
+            }
+
+            return arr
+        }
+
+     // insertSort(arr);
+// console.log(arr)  
+
+// 二维数组求和
+function sumArr(arr){
+    var sum=0;
+
+    for(var i=0;i<arr.length;i++){
+        for(var j=0;j<arr[i].length;j++){
+            sum +=arr[i][j];
+        }
+    }
+
+    return sum;
+}
+
+    </script>
+
+</body>
+
+</html>

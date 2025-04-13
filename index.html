@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入重置样式表 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- 引入公共的样式表 -->
+    <link rel="stylesheet" href="./css/base.css">
+    <!-- 引入当前页面的样式表 -->
+    <link rel="stylesheet" href="./css/index.css">
+    <title>个人博客</title>
+
+    <link rel="icon" href="./favicon.ico">
+
+</head>
+
+<body>
+
+
+    <!-- 头部导航栏 -->
+    <div class="topbar-wrapper">
+        <div class="topbar clearfix">
+
+            <!-- 左侧文字logo -->
+            <div class="logo">
+                <h1 id="logotitle">Zhang</h1>
+            </div>
+
+            <!-- 右侧菜单 -->
+            <ul class="right-menu" id="right-menu">
+                <li><a class="ap" href="#">首页
+                        <p class="active"></p>
+                    </a>
+                </li>
+                <li><a href="./schoolLife.html" class="ap">校园生活</a>
+                    <p></p>
+                </li>
+                <li><a href="./interest.html" class="ap">兴趣&爱好</a>
+                    <p></p>
+                </li>
+                <li><a href="./notes.html" class="ap">我的笔记</a>
+                    <p></p>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <!-- 轮播图 -->
+    <!-- top_img banner -->
+    <div id="banner">
+        <div id="showdiv">
+            <img src="img/1.jpg" class="bk_img" />
+            <img src="img/1.jpg" class="bk_img" />
+            <img src="img/1.jpg" class="bk_img" />
+            <img src="img/1.jpg" class="bk_img" />
+        </div>
+
+        <p class="left">
+            < </p>
+                <p class="right"> > </p>
+                <ul>
+                    <li class="li_bk"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+
+                </ul>
+
+                <!-- 导航箭头 -->
+                <div class="down">
+                </div>
+    </div>
+
+
+    <!-- 日常记录 -->
+    <div class="about-me w">
+        <h2>日 常 记 录</h2>
+        <ul id="tab" class="clearfix">
+            <li id="tab1" class="line-active" value="1">学习</li>
+            <li style="width: auto;">&</li>
+            <li id="tab2" value="2">生活</li>
+            <li style="width: auto;">&</li>
+            <li id="tab3" value="3">其他</li>
+        </ul>
+
+        <div id="container">
+            <div id="content1">
+                <ul class="imgs">
+                    <li><a href="./schoolLife.html"><img src="img/1.jpg" alt="" srcset=""></a></li>
+                    <li><a href="./schoolLife.html"><img src="img/1.jpg" alt="" srcset=""></a></li>
+                    <li><a href="./schoolLife.html"><img src="img/1.jpg" alt="" srcset=""></a></li>
+                    <li><a href="./schoolLife.html"><img src="img/1.jpg"alt="" srcset=""></a></li>
+                    <li><a href="./schoolLife.html"><img src="img/1.jpg" alt="" srcset=""></a></li>
+                    <li><a href="./schoolLife.html"><img src="img/1.jpg" alt="" srcset=""></a></li>
+                    <li><a href="./schoolLife.html"><img src="img/1.jpg" alt="" srcset=""></a></li>
+                    <li><a href="./schoolLife.html"><img src="img/1.jpg" alt="" srcset=""></a></li>
+                </ul>
+            </div>
+            <div id="content2" style="display: none">
+                <ul class="imgs">
+                    <li><a href="./schoolLife.html"><img src="img/1.jpg" alt="" srcset=""></a></li>
+                    <li><a href="./schoolLife.html"><img src="img/1.jpg" alt="" srcset=""></a></li>
+                    <li><a href="./schoolLife.html"><img src="img/1.jpg" alt="" srcset=""></a></li>
+                    <li><a href="./schoolLife.html"><img src="img/1.jpg" alt="" srcset=""></a></li>
+                    <li><a href="./schoolLife.html"><img src="img/1.jpg" alt="" srcset=""></a></li>
+                    <li><a href="./schoolLife.html"><img src="img/1.jpg" alt="" srcset=""></a></li>
+                    <li><a href="./schoolLife.html"><img src="img/1.jpg" alt="" srcset=""></a></li>
+                    <li><a href="./schoolLife.html"><img src="img/1.jpg" alt="" srcset=""></a></li>
+                </ul>
+            </div>
+            <div id="content3" style="display: none">
+                <ul class="imgs">
+                    <li><a href="./schoolLife.html"><img src="img/1.jpg" alt="" srcset=""></a></li>
+                    <li><a href="./schoolLife.html"><img src="img/1.jpg" alt="" srcset=""></a></li>
+                    <li><a href="./schoolLife.html"><img src="img/1.jpg" alt="" srcset=""></a></li>
+                    <li><a href="./schoolLife.html"><img src="img/1.jpg" alt="" srcset=""></a></li>
+                    <li><a href="./schoolLife.html"><img src="img/1.jpg" alt="" srcset=""></a></li>
+                    <li><a href="./schoolLife.html"><img src="img/1.jpg" alt="" srcset=""></a></li>
+                    <li><a href="./schoolLife.html"><img src="img/1.jpg" alt="" srcset=""></a></li>
+                    <li><a href="./schoolLife.html"><img src="img/1.jpg" alt="" srcset=""></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 技能与目标 -->
+
+    <div class="Skills-and-Goals w clearfix">
+        <h2>技能 & 目标</h2>
+
+        <!-- 技能区 -->
+        <div class="Skills">
+            <ul>
+                <li>
+                    <div class="skill-info">
+                        <span>HTML、CSS</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="g-container">
+                        <div class="g-progress g-progress1"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="skill-info">
+                        <span>JAVA</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="g-container">
+                        <div class="g-progress g-progress2"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="skill-info">
+                        <span>JavaScript</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="g-container">
+                        <div class="g-progress g-progress3"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="skill-info">
+                        <span>Python</span>
+                        <span>20%</span>
+                    </div>
+                    <div class="g-container">
+                        <div class="g-progress g-progress4"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="skill-info">
+                        <span>Linux</span>
+                        <span>5%</span>
+                    </div>
+                    <div class="g-container">
+                        <div class="g-progress g-progress5"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 规划区 -->
+        <div class="Goals">
+
+            <h3>2025年新规划</h3>
+
+            <p>入门JAVA,打好JAVA的基础</p>
+            <p>学习JavaScript,制作HTML动态页面</p>
+            <p>入门JQuery,学习JavaScript的框架的使用,使得开发更加便捷</p>
+            <p>购买并且读完"大话数据结构"</p>
+            <p>入门学习Photoshop,学会使用制作简单的LOGO图标</p>
+            <p>学习英语，掌握基本的英语运用</p>
+        </div>
+    </div>
+
+
+    <!-- 学校生活 -->
+    <div class="School-Life w">
+        <h2>校 园 生 活</h2>
+
+        <!-- 左侧展示 -->
+        <div class="left">
+            <ul class="clearfix">
+                <li><a href="./schoolLife.html">
+                        <div class="left-img">
+                            <img style="width: 100%;" src="img/1.jpg" alt="" srcset="">
+                        </div>
+                        <div class="left-info">
+                            <h4>三校区运动会 </h4>
+                        </div>
+                    </a></li>
+
+                <li><a href="./schoolLife.html">
+                        <div class="left-img">
+                            <img style="width: 100%;" src="img/1.jpg" alt="" srcset="">
+                        </div>
+                        <div class="left-info">
+                            <h4>趣味团建 </h4>
+                        </div>
+                    </a></li>
+
+                <li><a href="./schoolLife.html">
+                        <div class="left-img">
+                            <img style="width: 100%;" src="img/1.jpg" alt="" srcset="">
+                        </div>
+                        <div class="left-info">
+                            <h4>团课时间 </h4>
+                        </div>
+                    </a></li>
+
+                <li><a href="./schoolLife.html">
+                        <div class="left-img">
+                            <img style="width: 100%;" src="img/1.jpg" alt="" srcset="">
+                        </div>
+                        <div class="left-info">
+                            <h4>友谊篮球赛 </h4>
+                        </div>
+                    </a></li>
+            </ul>
+        </div>
+
+        <!-- 右侧展示 -->
+        <div class="right">
+            <!-- 个人信息 -->
+            <div class="info">
+                <div class="img">
+                    <img src="img/1.jpg" alt="">
+                </div>
+
+                <div class="desc">
+
+                    <h4>遥 </h4>
+                    <p>人生有限，兄争朝夕啊。人生学习的态度是：不急不躁，不快不慢。持之以恒，相信自己。不求能改变世界，但求能改变自己的生活。不求健步如飞，但求一步一脚印。</p>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- 底部 -->
+
+    <div class="footer w">
+        <h2>联 系 TA</h2>
+        <div class="left">
+
+            <h4>
+                欢迎联系，问题与反馈
+            </h4>
+
+            <input id="name" placeholder="   姓名">
+            <input id="phone" placeholder="   电话">
+
+            <textarea name="" id="txt" cols="20" rows="8" placeholder="   在这里写下你要留言的信息吧"></textarea>
+
+            <button style=" cursor: pointer;" type="submit" onclick="submit()">发送</button>
+
+
+
+            <div>
+
+            </div>
+        </div>
+
+
+        <div class="right">
+            <img src="img/1.jpg" alt="">
+        </div>
+
+
+
+
+
+    </div>
+
+    <!-- 版权 -->
+    <div class="banquan">
+
+        <p>Keep on going never give up.</p>
+        <p>xxxxxxxx</p>
+        <p>yaoyun 制作</p>
+
+
+
+    </div>
+
+
+    <script type="text/javascript" src="js/jquery-1.10.1.js"></script>
+    <script type="text/javascript" src="js/banner.js"></script>
+    <script type="text/javascript" src="js/aboutMe.js"></script>
+    <script type="text/javascript" src="js/Skills.js"></script>
+    <script type="text/javascript" src="js/topbar.js"></script>
+
+    <script>
+        // 提交反馈事件
+        function submit() {
+            var name = $("#name").val()
+            var phone = $("#phone").val()
+            var txt = $("#txt").val()
+
+            if (!name) {
+                alert("请输入姓名")
+                return
+            }
+            if (!phone) {
+                alert("请输入手机号")
+                return
+
+            }
+            if (!txt) {
+                alert("请输入反馈内容")
+                return
+
+            }
+
+            alert("提交成功，感谢您的反馈")
+            return false
+        }
+    </script>
+
+</body>
+
+</html>
